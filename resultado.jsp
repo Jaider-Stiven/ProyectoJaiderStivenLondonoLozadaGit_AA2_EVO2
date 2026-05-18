@@ -64,10 +64,12 @@
         <h1>Pedido Registrado</h1>
 
         <%
-            String cliente = request.getParameter("cliente");
-            String restaurante = request.getParameter("restaurante");
-            String comida = request.getParameter("comida");
-            String cantidad = request.getParameter("cantidad");
+<%
+                  String cliente = (String) request.getAttribute("cliente");
+                  String restaurante = (String) request.getAttribute("restaurante");
+                  String comida = (String) request.getAttribute("comida");
+                  String cantidad = (String) request.getAttribute("cantidad");
+%>
         %>
 
         <p>
